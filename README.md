@@ -39,17 +39,6 @@ A dynamic and interactive quiz application built using HTML, CSS, and JavaScript
 ![Results Screen](screenshots/screenshot4.png)
 
 
-
-## Installation
-
-1. Clone the repository:
-   git clone https://github.com/yourusername/quiz-app.git
-   
-2. Navigate to the project directory:
-  cd quiz-app
-
-3. Open index.html in your web browser to run the app.
-
 ## Usage
   1. Select the number of questions, category, and difficulty level.
   2. Click "Start" to begin the quiz.
