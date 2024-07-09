@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/main.css" />
+  </head>
+  <body>
+    <div class="main main2">
+      <header class="header">
+        <a href="#" class="logo">Quiz</a>
+        <nav class="navbar">
+          <a href="#" class="active">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </nav>
+      </header>
+    </div>
+
+    <div class="container">
+      <section class="quiz-section">
+        <div class="quiz-box">
+          <h4 class="category-info"></h4>
+          <div class="quiz-header">
+            <span class="difficulty-info"></span>
+            <span class="header-score"></span>
+            <span><h2 class="timer-display"></h2></span>
+          </div>
+          <h2 class="question-text"></h2>
+
+          <div class="option-list"></div>
+
+          <div class="quiz-footer">
+            <div>
+              <div class="progress-container">
+                <div class="progress-bar"></div>
+              </div>
+              <span class="question-total"></span>
+            </div>
+            <button class="next-btn">Next</button>
+          </div>
+        </div>
+
+        <div class="result-box">
+          <h2>Quiz Result!!</h2>
+          <div class="percentage">
+            <div class="progress">
+              <span class="progress-value"></span>
+            </div>
+
+            <span class="score-text"></span>
+          </div>
+
+          <div class="high-score-container">
+            <p>High Score: <span class="high-score">0</span></p>
+          </div>
+
+          <div class="buttons">
+            <button class="newRound-btn">New Round</button>
+            <button class="goHome-btn">Go To Home</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="/main.js"></script>
+  </body>
+</html>

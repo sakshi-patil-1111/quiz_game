@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/select.css" />
+  </head>
+  <body>
+    <div class="main main2">
+      <header class="header">
+        <a href="#" class="logo">Quiz</a>
+        <nav class="navbar">
+          <a href="#" class="active">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </nav>
+      </header>
+    </div>
+
+    <div class="popup-info">
+      <h2>Quiz Options</h2>
+      <form method="post" action="/select">
+        <span class="info">
+          <label for="amount">Number of Questions: (1 to 50):</label>
+          <input
+            type="number"
+            id="amount"
+            name="amount"
+            min="1"
+            max="50"
+            value="1"
+          />
+        </span>
+        <br />
+        <span class="info">
+          <label for="category">Select Category: </label>
+          <select name="category" id="category">
+            <option value="any">Any Category</option>
+            <option value="9">General Knowledge</option>
+            <option value="10">Entertainment: Books</option>
+            <option value="11">Entertainment: Film</option>
+            <option value="12">Entertainment: Music</option>
+            <option value="13">Entertainment: Musicals & Theatres</option>
+            <option value="14">Entertainment: Television</option>
+            <option value="15">Entertainment: Video Games</option>
+            <option value="16">Entertainment: Board Games</option>
+            <option value="17">Science & Nature</option>
+            <option value="18">Science: Computers</option>
+            <option value="19">Science: Mathematics</option>
+            <option value="20">Mythology</option>
+            <option value="21">Sports</option>
+            <option value="22">Geography</option>
+            <option value="24">Politics</option>
+            <option value="25">Art</option>
+            <option value="26">Celebrities</option>
+            <option value="27">Animals</option>
+            <option value="28">Vehicles</option>
+            <option value="29">Entertainment: Comics</option>
+            <option value="30">Science: Gadgets</option>
+          </select>
+        </span>
+        <br />
+        <span class="info">
+          <label for="difficulty">Select Difficulty:</label>
+          <select name="difficulty" id="difficulty">
+            <option value="any">Any</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </span>
+
+        <div class="btn-group">
+          <button type="button" class="info-btn exit-btn" onclick="exitQuiz()">
+            Exit Quiz
+          </button>
+          <button type="submit" class="info-btn continue-btn">Continue</button>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      function exitQuiz() {
+        window.location.href = "/";
+      }
+    </script>
+  </body>
+</html>

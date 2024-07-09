@@ -1,0 +1,109 @@
+.popup-info {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  transform: scale(0.9);
+  width: 600px;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 10px 25px;
+  text-align: center;
+  opacity: 0;
+  animation: scaleUp 1s forwards 1s, moveIn 1s forwards 1s;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes moveIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.popup-info h2 {
+  font-size: 50px;
+  color: #c40094;
+}
+
+.popup-info .info {
+  display: inline-block;
+  font-size: 20px;
+  color: #333;
+  font-weight: 500;
+  margin: 4px 0;
+  padding: 10px 50px;
+}
+
+input,
+select {
+  font-size: 15px;
+  padding: 0;
+  height: 35px;
+  border: 1px solid #09001d;
+  margin-top: 10px;
+}
+
+input,
+select option {
+  text-align: center;
+  font-size: 15px;
+  padding: 0;
+  height: 35px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+.popup-info .btn-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #999;
+  margin-top: 10px;
+  padding: 15px 0 7px;
+}
+
+.popup-info .btn-group .info-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 45px;
+  background-color: #c40094;
+  border: 2px solid #c40094;
+  outline: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.popup-info .btn-group .info-btn:nth-child(1) {
+  background: transparent;
+  color: #c40094;
+}
+
+.popup-info .btn-group .info-btn:nth-child(1):hover {
+  background: #c40094;
+  color: #fff;
+}
+
+.popup-info .btn-group .info-btn:nth-child(2):hover {
+  background-color: #950170;
+  border-color: #950170;
+}
